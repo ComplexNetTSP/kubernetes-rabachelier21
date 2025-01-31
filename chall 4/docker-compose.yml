@@ -18,7 +18,7 @@ services:
   nginx:
     build: ./nginx
     ports:
-      - 8080:80
+      - 8888:80
     depends_on:
       - app1
       - app2

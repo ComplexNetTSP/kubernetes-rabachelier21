@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: webnodb-service
+  namespace: rbachelier
+spec:
+  selector:
+    app: webnodb
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8888
+  type: NodePort
